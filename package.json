@@ -1,0 +1,28 @@
+{
+  "name": "vfsmodule",
+  "version": "1.0.0",
+  "description": "vendor finance solution",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "cd client && npm run build && cd .. && pm2 start server.js --watch --ignore-watch='node_modules'",
+    "start": "cd client && npm run build && cd .. && pm2 start server.js",
+    "restart": "cd client && npm run build && cd .. && pm2 restart server.js",
+    "stop": "pm2 stop server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^5.13.4",
+    "multer": "^1.4.4",
+    "node-cron": "^3.0.0",
+    "xlsx": "^0.17.0"
+  }
+}
